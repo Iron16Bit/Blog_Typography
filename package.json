@@ -65,6 +65,8 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "src/**/*.{ts,js,astro,md,mdx}": "eslint --fix",
+    "src/**/*.{ts,js,astro,md,mdx}": "prettier --write",
+    "package.json": "prettier --write"
   }
 }
